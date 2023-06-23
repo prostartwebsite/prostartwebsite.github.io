@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header {
+  background: #D9D9D9;
+  width: 100%;
+}
+.header__items {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__items__menu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  text-decoration: none;
+  width: 50%;
+}
+.header__items__menu__item {
+  display: block;
+}
+.header__items__menu__item a {
+  text-decoration: none;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #000000;
+}
+.header__items__menu__item__create {
+  width: 230px;
+  padding: 5px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+}
+.header__items__profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 10%;
+}
+.header__items__profile img {
+  cursor: pointer;
+}
+.header__items__profile__icon {
+  background-color: #000000;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+}
+
+.search {
+  margin-top: 30px;
+}
+.search__input {
+  width: 50%;
+  border-radius: 27px;
+  background: rgba(217, 217, 217, 0.7);
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  font-family: Raleway;
+  border: none;
+  padding: 5px 5px 5px 20px;
+}
+.search__tags {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.search__tags__items {
+  display: flex;
+}
+.search__tags__items__item {
+  border-radius: 18px;
+  opacity: 0.6999999881;
+  background: rgba(217, 217, 217, 0.7);
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: Raleway;
+  padding: 0px 20px 0px 20px;
+  margin-top: 10px;
+  margin-right: 10px;
+  height: 36px;
+  cursor: pointer;
+}
+.search__tags__add {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 36px;
+  background: rgba(217, 217, 217, 0.7);
+  border: none;
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  font-family: Raleway;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.cards {
+  width: 100%;
+  margin-top: 20px;
+}
+.cards__card {
+  width: 100%;
+  height: 170px;
+  border-radius: 16px;
+  background: rgba(217, 217, 217, 0.8);
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.cards__card__image {
+  height: 100%;
+  border-radius: 16px 0 0 16px;
+}
+.cards__card__text {
+  width: 40%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+.cards__card__text__information {
+  display: flex;
+  justify-content: space-between;
+}
+.cards__card__text__information__item {
+  color: #808080;
+  font-size: 14px;
+  font-family: Raleway;
+  font-weight: 400;
+}
+.cards__card__tags {
+  display: flex;
+  width: 38%;
+  height: 90%;
+  justify-content: end;
+  align-items: end;
+}
+.cards__card__tags__item {
+  border-radius: 18px;
+  opacity: 0.6999999881;
+  background: rgb(217, 217, 217);
+  color: #000;
+  font-size: 16px;
+  font-family: Raleway;
+  padding: 7px 20px 7px 20px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.cards__subscription {
+  width: 75%;
+  padding: 20px 20px 20px 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px auto 30px auto;
+  border-radius: 10px;
+  border: 2px solid #808080;
+}
+.cards__subscription__text {
+  color: #000;
+  font-size: 20px;
+  font-family: Raleway;
+}
+.cards__subscription__btn {
+  color: #242420;
+  font-size: 17px;
+  font-family: Raleway;
+  background: transparent;
+  padding: 10px 15px 10px 15px;
+  border-radius: 6px;
+  border: 1px solid #808080;
+  cursor: pointer;
+}
+
+h1 {
+  color: #000;
+  font-size: 36px;
+  font-family: Raleway;
+  font-weight: 900;
+}
+
+h2 {
+  color: #000;
+  font-size: 16px;
+  font-family: Raleway;
+  font-weight: 400;
+}/*# sourceMappingURL=products.css.map */
