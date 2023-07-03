@@ -197,6 +197,7 @@ h2 {
   align-items: center;
 }
 .about__dev__developers__item__text {
+  width: 100px;
   margin-left: 20px;
   color: #000;
   font-size: 16px;
@@ -329,6 +330,7 @@ h2 {
   display: flex;
   align-items: center;
   position: relative;
+  margin-top: 200px;
 }
 .footer__bg {
   background: #6F41D0;

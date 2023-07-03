@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/create.css">
+    <title>ProStart</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class="header__items">
+                    <a href="/index.html"><img class="header__items__logo" src="/img/logo-white.svg" alt="logo"></a>
+                    <ul class="header__items__menu">
+                        <li class="header__items__menu__item"><a href="/index.html">О нас</a></li>
+                        <li class="header__items__menu__item"><a href="products.html">Каталог</a></li>
+                        <li class="header__items__menu__item"><button type="button" class="header__items__menu__item__create">Создать продукт</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <form enctype="multipart/form-data" method="post">
+        <div class="container">
+            <div class="create">
+                <div class="create__main">
+                    <div class="create__main__text">
+                        <div class="create__main__text__title">
+                            <span class="create__main__text__title">Создание карточки продукта </span>
+                            <img src="/img/edit.svg" alt="edit">
+                        </div>
+                        <div class="create__main__text__name">
+                            <span>Название</span>
+                            <input type="text">
+                            <button type="button">сгенерировать</button>
+                        </div>
+                        <div class="create__main__text__description">
+                            <span>Описание</span>
+                            <input placeholder="Расскажите про свой продукт" type="text">
+                        </div>
+                        <div class="create__main__text__mail">
+                            <span>Почта</span>
+                            <input placeholder="Укажите вашу почту" type="text">
+                        </div>
+                    </div>
+                    <div class="create__main__logo">
+                        <div class="create__main__logo__img">
+                            <img src="/img/none.svg" alt="none">
+                        </div>
+                        <button type="button">добавить лого</button>
+                    </div>
+                    
+                </div>
+                <div class="create__developers">
+                    <span class="create__developers__title">Разработчики</span>
+                    <span class="create__developers__text">Выбрать существующего</span>
+                    <select name="text" id="">
+                        <option value="0">Добавьте разработчиков</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                    <button type="button" class="create__developers__button">новый разработчик</button>
+                </div>
+                <div class="create__tags">
+                    <span class="create__tags__title">Тэги</span>
+                    <div class="create__tags__fields">
+                        <button type="button">добавить тэги</button>
+                        <button type="button">сгенерировать</button>
+                        <div class="create__tags__fields__cat">
+                            <span>Категория</span>
+                            <select name="text" id="">
+                                <option value="0">Выберите категорию</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="create__contacts">
+                    <span class="create__contacts__title">Контакты</span>
+                    <div class="create__contacts__icons">
+                        <img src="/img/Telegram Fill 1.png" alt="">
+                        <img src="/img/Messenger Fill 1.png" alt="">
+                        <img src="/img/VK Fill 1.png" alt="">
+                        <img src="/img/Instagram Fill 1.png" alt="">
+                        <img src="/img/Github.png" alt="">
+                    </div>
+                    <select name="text" id="">
+                        <option value="0">Средство связи</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                    <div  class="create__contacts__button">
+                        <button type="button" class="create__contacts__button__btn">загрузить медиа</button>
+                        <input class="create__contacts__button__input" hidden type="file" multiple accept="image/*">
+                        <img src="/img/file.svg" alt="">
+                    </div>
+                    <button type="submit" class="create__contacts__button__go">
+                        опубликовать
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <footer class="footer__bg">
+        <div class="container">
+            <div class="footer">
+                <img src="/img/logo-white.svg" alt="">
+                <div class="footer__menu">
+                    <a href="/index.html" class="footer__menu__item">О нас</a>
+                    <a href="products.html" class="footer__menu__item">Каталог</a>
+                    <a href="create.html" class="footer__menu__item">Запуск продукта</a>
+                </div>
+                <span class="footer__text">Copyright © 2023. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+    <dev class="new-developer">
+        <div class="container">
+            <form class="new-developer__window">
+                <span class="new-developer__window__title">Новый разрабортчик</span>
+                <img class="new-developer__window__close" src="/img/close.png" alt="close">
+                <div class="new-developer__window__main">
+                    <div class="new-developer__window__main__item">
+                        <span class="new-developer__window__main__item__text">Имя</span>
+                        <input class="new-developer__window__main__item__input" placeholder="Имя разработчика" type="text">
+                    </div>
+                    <div class="new-developer__window__main__item">
+                        <span class="new-developer__window__main__item__text">Должность</span>
+                        <input class="new-developer__window__main__item__input" placeholder="Должность" type="text">
+                    </div> 
+                </div>
+                <div class="new-developer__window__main">
+                    <div class="new-developer__window__main__item">
+                        <span class="new-developer__window__main__item__text">Описание</span> <input class="new-developer__window__main__item__input" placeholder="Описание" type="text">
+                    </div>
+                    <div class="new-developer__window__main__item">
+                        <span class="new-developer__window__main__item__text">Фото</span>
+                        <button class="new-developer__window__main__item__btn">загрузить фото</button>
+                    </div> 
+                </div> 
+                <button class="new-developer__window__add">Добавить</button>
+            </form>
+        </div>
+    </dev>
+    <script src="/js/create.js"></script>
+</body>
+</html>
