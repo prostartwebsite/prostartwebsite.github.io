@@ -28,7 +28,7 @@
                         <img src="/img/gradient.png" alt="image">
                     </div>
                     <div class="card__text">
-                        <h1>Title</h1>
+                        <h1 id="title"></h1>
                         <div class="card__tags">
                             <div class="card__tags__item">
                                 tag
@@ -43,20 +43,19 @@
                             
                     
                         <div class="card__text__information">
-                            <span class="card__text__information__item">Developer</span>
-                            <span class="card__text__information__item">Category</span>
-                            <span class="card__text__information__item">2 days ago</span>
+                            <span id="developer" class="card__text__information__item">Developer</span>
+                            <span id="time" class="card__text__information__item">2 days ago</span>
                         </div>
                     </div>
                     <div class="card__right">
                         <div class="card__right__contacts">
-                            <img src="/img/Telegram Fill 1.png" alt="">
-                            <img src="/img/Messenger Fill 1.png" alt="">
-                            <img src="/img/VK Fill 1.png" alt="">
-                            <img src="/img/Instagram Fill 1.png" alt="">
-                            <img src="/img/Github.png" alt="">
+                            <a id="telegram" href="#"><img src="/img/Telegram Fill 1.png" alt=""></a>
+                            <a id="messenger" href="#"><img src="/img/Messenger Fill 1.png" alt=""></a>
+                            <a id="instagram" href="#"><img src="/img/Instagram Fill 1.png" alt=""></a>
+                            <a id="vk" href="#"><img src="/img/VK Fill 1.png" alt=""></a>
+                            <a id="github" href="#"><img src="/img/Github.png" alt=""></a>
                         </div>
-                        <span class="card__right__mail">hello@mail.com</span>
+                        <span id="mail" class="card__right__mail">hello@mail.com</span>
                         <button class="card__right__btn"><img src="/img/comment.svg" alt=""></button>
                     </div>
                 </div>
@@ -66,38 +65,19 @@
         <div class="container">
             <div class="about">
                 <span class="about__desc-title">Описание</span>
-                <div class="about__desc"></div>
+                <div id="description" class="about__desc"></div>
                 <div class="about__dev">
                     <div class="about__dev__developers">
                         <span class="about__dev__developers__title">Разработчики</span>
-                        <div class="about__dev__developers__item">
-                            <img src="/img/dev1.png" alt="">
-                            <div class="about__dev__developers__item__text">
-                                Имя тут <br> Позиция тут<br> Еще что-то
-                            </div>
+                        <div class="about__dev__developers__ul">
+                            
                         </div>
-                        <div class="about__dev__developers__item">
-                            <img src="/img/dev2.png" alt="">
-                            <div class="about__dev__developers__item__text">
-                                Имя тут <br> Позиция тут<br> Еще что-то
-                            </div>
-                        </div>
-                        <div class="about__dev__developers__item">
-                            <img src="/img/dev3.png" alt="">
-                            <div class="about__dev__developers__item__text">
-                                Имя тут <br> Позиция тут<br> Еще что-то
-                            </div>
-                        </div>
+                        
                     </div>
                     <div class="about__dev__galery">
                         <span class="about__dev__galery__title">Галерея</span>
                         <div class="about__dev__galery__img">
-                            <img src="/img/imgEx.png" alt="">
-                            <img src="/img/imgEx.png" alt="">
-                            <img src="/img/imgEx.png" alt="">
-                            <img src="/img/imgEx.png" alt="">
-                            <img src="/img/imgEx.png" alt="">
-                            <img src="/img/imgEx.png" alt="">
+                            
                         </div>
                     </div>
                 </div>
@@ -161,6 +141,6 @@
             </div>
         </div>
     </footer>
-    <script src="/js/card.js"></script>
+    <script type="module" src="/js/card.js"></script>
 </body>
 </html>

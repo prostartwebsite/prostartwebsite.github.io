@@ -21,7 +21,7 @@
             </div>
         </div>
     </header>
-    <form enctype="multipart/form-data" method="post">
+    <div>
         <div class="container">
             <div class="create">
                 <div class="create__main">
@@ -32,78 +32,78 @@
                         </div>
                         <div class="create__main__text__name">
                             <span>Название</span>
-                            <input type="text">
+                            <input id="title" placeholder="Название" type="text">
                             <button type="button">сгенерировать</button>
                         </div>
                         <div class="create__main__text__description">
                             <span>Описание</span>
-                            <input placeholder="Расскажите про свой продукт" type="text">
+                            <input id="description" placeholder="Расскажите про свой продукт" type="text">
                         </div>
                         <div class="create__main__text__mail">
                             <span>Почта</span>
-                            <input placeholder="Укажите вашу почту" type="text">
+                            <input id="mail" placeholder="Укажите вашу почту" type="text">
                         </div>
                     </div>
                     <div class="create__main__logo">
                         <div class="create__main__logo__img">
-                            <img src="/img/none.svg" alt="none">
+                            <img class="create__main__logo__img__item" src="/img/none.svg" alt="none">
                         </div>
-                        <button type="button">добавить лого</button>
+                        <div class="create__main__logo__input-wrapper">
+                            <input  name="file" type="file" id="input__file" class="create__main__logo__input-wrapper__file" multiple>
+                            <label for="input__file" class="input__file-button">
+                                <span class="input__file-button-text">добавить лого</span>
+                            </label>
+                        </div>
                     </div>
                     
                 </div>
                 <div class="create__developers">
                     <span class="create__developers__title">Разработчики</span>
-                    <span class="create__developers__text">Выбрать существующего</span>
-                    <select name="text" id="">
-                        <option value="0">Добавьте разработчиков</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                    </select>
-                    <button type="button" class="create__developers__button">новый разработчик</button>
+                    <ul class="create__developers__ul">
+
+                    </ul>
+                    <button type="button" class="create__developers__button">добавить разработчика</button>
                 </div>
                 <div class="create__tags">
                     <span class="create__tags__title">Тэги</span>
                     <div class="create__tags__fields">
                         <button type="button">добавить тэги</button>
                         <button type="button">сгенерировать</button>
-                        <div class="create__tags__fields__cat">
-                            <span>Категория</span>
-                            <select name="text" id="">
-                                <option value="0">Выберите категорию</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                            </select>
-                        </div>
-                        
                     </div>
                 </div>
                 <div class="create__contacts">
                     <span class="create__contacts__title">Контакты</span>
                     <div class="create__contacts__icons">
-                        <img src="/img/Telegram Fill 1.png" alt="">
-                        <img src="/img/Messenger Fill 1.png" alt="">
-                        <img src="/img/VK Fill 1.png" alt="">
-                        <img src="/img/Instagram Fill 1.png" alt="">
-                        <img src="/img/Github.png" alt="">
+                        <img id="telegram" class="create__contacts__icons__item" src="/img/Telegram Fill 1.png" alt="">
+                        <img id="messenger" class="create__contacts__icons__item" src="/img/Messenger Fill 1.png" alt="">
+                        <img id="vk" class="create__contacts__icons__item" src="/img/VK Fill 1.png" alt="">
+                        <img id="instagram" class="create__contacts__icons__item" src="/img/Instagram Fill 1.png" alt="">
+                        <img id="github" class="create__contacts__icons__item" src="/img/Github.png" alt="">
                     </div>
-                    <select name="text" id="">
+                    <!-- <select name="text" id="">
                         <option value="0">Средство связи</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
-                    </select>
+                    </select> -->
+                    <ul class="create__contacts__ul">
+                        
+                    </ul>
                     <div  class="create__contacts__button">
-                        <button type="button" class="create__contacts__button__btn">загрузить медиа</button>
-                        <input class="create__contacts__button__input" hidden type="file" multiple accept="image/*">
+                        <div class="create__contacts__button__input-wrapper">
+                            <input id="imgEx" class="create__contacts__button__input-wrapper__file" type="file">
+                            <label for="imgEx" class="input__file-button">
+                                <span type="button" class="create__contacts__button__btn">загрузить медиа</span>
+                            </label>
+                        </div>
                         <img src="/img/file.svg" alt="">
                     </div>
-                    <button type="submit" class="create__contacts__button__go">
+                    <button class="create__contacts__button__go">
                         опубликовать
                     </button>
                 </div>
             </div>
         </div>
-    </form>
+    </div>
     <footer class="footer__bg">
         <div class="container">
             <div class="footer">
@@ -117,34 +117,49 @@
             </div>
         </div>
     </footer>
-    <dev class="new-developer">
+    <div class="new-developer">
         <div class="container">
-            <form class="new-developer__window">
+            <div class="new-developer__window">
                 <span class="new-developer__window__title">Новый разрабортчик</span>
                 <img class="new-developer__window__close" src="/img/close.png" alt="close">
                 <div class="new-developer__window__main">
                     <div class="new-developer__window__main__item">
                         <span class="new-developer__window__main__item__text">Имя</span>
-                        <input class="new-developer__window__main__item__input" placeholder="Имя разработчика" type="text">
+                        <input id="devName" class="new-developer__window__main__item__input" placeholder="Имя разработчика" type="text">
                     </div>
                     <div class="new-developer__window__main__item">
                         <span class="new-developer__window__main__item__text">Должность</span>
-                        <input class="new-developer__window__main__item__input" placeholder="Должность" type="text">
+                        <input id="devPosition" class="new-developer__window__main__item__input" placeholder="Должность" type="text">
                     </div> 
                 </div>
                 <div class="new-developer__window__main">
                     <div class="new-developer__window__main__item">
-                        <span class="new-developer__window__main__item__text">Описание</span> <input class="new-developer__window__main__item__input" placeholder="Описание" type="text">
+                        <span class="new-developer__window__main__item__text">Описание</span> <input id="devDescription" class="new-developer__window__main__item__input" placeholder="Описание" type="text">
                     </div>
                     <div class="new-developer__window__main__item">
                         <span class="new-developer__window__main__item__text">Фото</span>
-                        <button class="new-developer__window__main__item__btn">загрузить фото</button>
+                        <div class="new-developer__window__main__item__input-wrapper">
+                            <input  name="file" type="file" id="devImg">
+                            <label for="devImg" class="input__file-button">
+                                <span class="new-developer__window__main__item__btn">загрузить фото</span>
+                            </label>
+                        </div>
                     </div> 
                 </div> 
                 <button class="new-developer__window__add">Добавить</button>
-            </form>
+            </div>
+        </div>
+    </div>
+    <dev class="link">
+        <div class="container">
+            <div class="link__window">
+                <span class="link__window__title">Добавьте ссылку</span>
+                <img class="link__window__close" src="/img/close.png" alt="close">
+                <input class="link__window__input" type="text">
+                <button class="link__window__add">Добавить</button>
+            </div>
         </div>
     </dev>
-    <script src="/js/create.js"></script>
+    <script type="module" src="/js/create.js"></script>
 </body>
 </html>

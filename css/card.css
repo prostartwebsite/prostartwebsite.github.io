@@ -169,14 +169,15 @@ h2 {
 .about__desc {
   margin-top: 20px;
   width: 100%;
-  height: 150px;
-  border-radius: 16px;
-  background: rgba(238, 238, 238, 0.7);
+  color: #000;
+  font-size: 20px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 400;
 }
 .about__dev {
   margin-top: 30px;
   display: flex;
-  align-items: center;
 }
 .about__dev__developers {
   display: flex;
@@ -223,6 +224,8 @@ h2 {
 }
 .about__dev__galery__img img {
   margin-bottom: 20px;
+  width: 200px;
+  margin-right: 20px;
 }
 
 .comments {
