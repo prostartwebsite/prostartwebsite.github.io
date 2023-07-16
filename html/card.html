@@ -25,23 +25,13 @@
         <div class="container">
             <div class="card">
                     <div class="card__image">
-                        <img src="/img/gradient.png" alt="image">
+                        <img class="card__image__item" src="/img/gradient.png" alt="image">
                     </div>
                     <div class="card__text">
                         <h1 id="title"></h1>
                         <div class="card__tags">
-                            <div class="card__tags__item">
-                                tag
-                            </div>
-                            <div class="card__tags__item">
-                                tag
-                            </div>
-                            <div class="card__tags__item">
-                                tag
-                            </div>
-                        </div>
                             
-                    
+                        </div>
                         <div class="card__text__information">
                             <span id="developer" class="card__text__information__item">Developer</span>
                             <span id="time" class="card__text__information__item">2 days ago</span>
@@ -56,7 +46,7 @@
                             <a id="github" href="#"><img src="/img/Github.png" alt=""></a>
                         </div>
                         <span id="mail" class="card__right__mail">hello@mail.com</span>
-                        <button class="card__right__btn"><img src="/img/comment.svg" alt=""></button>
+                        <a href="#comments" class="card__right__btn"><img src="/img/comment.svg" alt=""></a>
                     </div>
                 </div>
         </div>
@@ -84,47 +74,25 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="comments">
         <div class="container">
             <div class="comments">
                 <span class="comments__title">Комментарии</span>
                 <div class="comments__main">
                     <div class="comments__main__item">
-                        <span>Почта</span>
-                        <input type="text">
-                    </div>
-                    <div class="comments__main__item">
                         <span>Никнейм</span>
-                        <input type="text">
+                        <input class="valid" id="commentName" type="text">
                     </div>
                 </div>
-                <input placeholder="Оставьте комментарий" type="text" class="comments__input">
+                <input id="commentItem" placeholder="Оставьте комментарий" type="text" class="comments__input valid">
+                <button class="comments__btn">отправить</button>
             </div>
         </div>
     </section>
     <section>
         <div class="container">
             <div class="com">
-                <div class="com__item">
-                    <span class="com__item__title">
-                        Егор Соколов <span class="com__item__title__date">1 day ago</span>
-                    </span>
-                    Hats off to the team behind this IT project! They have successfully tackled a complex challenge and produced an incredibly user-friendly and intuitive solution. It has made our lives so much easier.
-                    <a class="com__item__answ" href="#">Ответить</a>
-                </div>
-                <div class="com__item">
-                    <span class="com__item__title">
-                        Юлия Смирнова <span class="com__item__title__date">2 days ago</span>
-                    </span>
-                    I am thoroughly impressed by the level of professionalism and expertise displayed in this IT project. The seamless integration of various components and flawless execution truly deserve recognition.
-                    <a class="com__item__answ" href="#">Ответить</a>
-                </div>
-                <div class="com__item">
-                    <span class="com__item__title">
-                        Дмитрий Романов <span class="com__item__title__date">2 days ago</span>
-                    </span>
-                    What an exceptional IT project! The team's attention to detail and commitment to quality shines through in every aspect. It has exceeded all expectations and delivered an outstanding result.                    <a class="com__item__answ" href="#">Ответить</a>
-                </div>
+                
             </div>
         </div>
     </section>

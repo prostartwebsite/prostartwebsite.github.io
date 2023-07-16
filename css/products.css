@@ -62,6 +62,9 @@
 }
 .search__input {
   width: 50%;
+  height: 40px;
+  display: flex;
+  align-items: center;
   border-radius: 27px;
   background: #FFF;
   box-shadow: 0px 0px 16px 0px rgba(17, 17, 26, 0.1);
@@ -71,14 +74,44 @@
   border: none;
   padding: 5px 5px 5px 20px;
 }
+.search__input__item {
+  margin-right: 10px;
+  border-radius: 18px;
+  background: #FFF;
+  background: linear-gradient(180deg, #B27CF6 0%, #FFF 100%);
+  box-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: Raleway;
+  padding: 0px 20px 0px 20px;
+  height: 36px;
+  cursor: pointer;
+  position: relative;
+}
+.search__input__item__close {
+  position: absolute;
+  width: 10px;
+  top: -2px;
+  right: -5px;
+  cursor: pointer;
+}
 .search__tags {
-  width: 50%;
+  width: 100%;
+  height: 150px;
+  overflow: auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  padding-bottom: 20px;
 }
 .search__tags__items {
   display: flex;
+  flex-wrap: wrap;
 }
 .search__tags__items__item {
   border-radius: 18px;
@@ -129,7 +162,15 @@
 }
 .cards__card__image {
   height: 100%;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 16px 0 0 16px;
+}
+.cards__card__image img {
+  display: block;
+  width: 80%;
 }
 .cards__card__text {
   width: 40%;

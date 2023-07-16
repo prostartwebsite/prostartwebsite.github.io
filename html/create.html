@@ -32,24 +32,30 @@
                         </div>
                         <div class="create__main__text__name">
                             <span>Название</span>
-                            <input id="title" placeholder="Название" type="text">
-                            <button type="button">сгенерировать</button>
+                            <input class="valid" id="title" placeholder="Название" type="text">
+                            <button class="create__main__text__name__generate" type="button">сгенерировать</button>
+                        </div>
+                        <div class="create__main__text__tagline">
+                            <span>Тэглайн</span>
+                            <input class="valid" id="tagline" placeholder="Краткое описание" type="text">
+                            <button class="create__main__text__tagline__generate" type="button">сгенерировать</button>
                         </div>
                         <div class="create__main__text__description">
                             <span>Описание</span>
-                            <input id="description" placeholder="Расскажите про свой продукт" type="text">
+                            <input class="valid" id="description" placeholder="Расскажите про свой продукт" type="text">
                         </div>
+                        
                         <div class="create__main__text__mail">
                             <span>Почта</span>
-                            <input id="mail" placeholder="Укажите вашу почту" type="text">
+                            <input class="valid" id="mail" placeholder="Укажите вашу почту" type="text">
                         </div>
                     </div>
                     <div class="create__main__logo">
-                        <div class="create__main__logo__img">
+                        <div class="create__main__logo__img logoValid">
                             <img class="create__main__logo__img__item" src="/img/none.svg" alt="none">
                         </div>
                         <div class="create__main__logo__input-wrapper">
-                            <input  name="file" type="file" id="input__file" class="create__main__logo__input-wrapper__file" multiple>
+                            <input  name="file" type="file" id="input__file" class="create__main__logo__input-wrapper__file">
                             <label for="input__file" class="input__file-button">
                                 <span class="input__file-button-text">добавить лого</span>
                             </label>
@@ -62,13 +68,12 @@
                     <ul class="create__developers__ul">
 
                     </ul>
-                    <button type="button" class="create__developers__button">добавить разработчика</button>
+                    <button type="button" class="create__developers__button devValid">добавить разработчика</button>
                 </div>
                 <div class="create__tags">
                     <span class="create__tags__title">Тэги</span>
                     <div class="create__tags__fields">
-                        <button type="button">добавить тэги</button>
-                        <button type="button">сгенерировать</button>
+                        <button class="open-tags" type="button">добавить тэги</button>
                     </div>
                 </div>
                 <div class="create__contacts">
@@ -150,7 +155,7 @@
             </div>
         </div>
     </div>
-    <dev class="link">
+    <div class="link">
         <div class="container">
             <div class="link__window">
                 <span class="link__window__title">Добавьте ссылку</span>
@@ -159,7 +164,22 @@
                 <button class="link__window__add">Добавить</button>
             </div>
         </div>
-    </dev>
+    </div>
+    <div class="tags">
+        <div class="container">
+            <div class="tags__window">
+                <span class="tags__window__title">Выберите тэги</span>
+                <img class="tags__window__close" src="/img/close.png" alt="close">  
+                <div class="tags__window__ul">
+                    
+                </div>
+                <hr>
+                <div class="tags__window__all">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
     <script type="module" src="/js/create.js"></script>
 </body>
 </html>

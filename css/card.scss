@@ -71,6 +71,12 @@
     &__image{
         height: 100%;
         border-radius: 16px 0 0 16px;
+        &__item{
+            height: 80%;
+            margin-top: 10%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
     }
     &__text{
         width: 40%;
@@ -92,9 +98,8 @@
     }
     &__tags{
         display: flex;
-        width: 38%;
+        width: 100%;
         &__item{
-            width: 38%;
             border-radius: 18px;
             opacity: 0.699999988079071;
             background: linear-gradient(180deg, #B27CF6 0%, #FFF 100%);
@@ -126,6 +131,9 @@
             line-height: normal;
         }
         &__btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin-top: 10px;
             height: 40px;
             width: 40px;
@@ -232,6 +240,18 @@ h2{
 .comments{
     width: 100%;
     margin-top: 50px;
+    &__btn{
+        display: block;
+        border-radius: 5px;
+        margin-top: 20px;
+                    background: linear-gradient(0deg, rgba(50, 24, 150, 1), rgba(111, 65, 208, 1) 20%, rgba(178, 124, 246, 1) 90%);
+                    color: #FFFFFF;
+                    font-size: 20px;
+                    font-family: Raleway;
+                    border: none;
+                    padding: 10px 30px;
+                    cursor: pointer;
+    }
     &__title{
         color: #000;
         text-align: center;
@@ -365,4 +385,10 @@ h2{
         position: absolute;
         right: 0;
     }
+}
+.developer__photo{
+    width: 100px;
+}
+.valid.active{
+    border: 1px solid red;
 }
