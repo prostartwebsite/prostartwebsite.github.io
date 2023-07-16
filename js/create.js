@@ -197,7 +197,7 @@ async function generateTitle(description){
 }
 
 function writeCardsData() {
-    return new Promise( ( resolve, reject ) => {
+    return new Promise(resolve => {
         get(child(ref(getDatabase()), 'cards')).then((snapshot) => {
         if (snapshot.exists()) {
             let cardId = snapshot.val().length;
@@ -220,8 +220,9 @@ function writeCardsData() {
                 time: new Date().toString(),
                 tags: tagsPostList, 
                 comments: ""
+            }).then(() => {
+                window.location.href = '/html/products.html'
             });
-            resolve('/html/products.html');
         } else {
             alert("No data available");
         }
@@ -233,10 +234,7 @@ function writeCardsData() {
 }
 cardSubmitButton.addEventListener("click", function(){
     if(!(cardTitle.value == '' || cardDescription.value == '' || cardTagline.value == '' || cardMail.value == '' || !isLogo || !isDev)){
-        writeCardsData().then( (resolve) => {
-            window.location.href = resolve;
-        }
-        );
+        writeCardsData();
     }else{
         document.querySelectorAll(".valid").forEach(el => {
             if(el.value == ""){
