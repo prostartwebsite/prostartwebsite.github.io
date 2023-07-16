@@ -350,9 +350,34 @@
         &__icons{
             margin-top: 10px;
             display: flex;
-            & img{
-                margin-right: 5px;
-                cursor: pointer;
+            flex-direction: column;
+            &__item{
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+                &__btn{
+                    border-radius: 5px;
+                    background: linear-gradient(0deg, rgba(50, 24, 150, 1), rgba(111, 65, 208, 1) 20%, rgba(178, 124, 246, 1) 90%);
+                    color: #FFFFFF;
+                    font-size: 18px;
+                    font-family: Raleway;
+                    border: none;
+                    padding: 8px;
+                    cursor: pointer; 
+                }
+                &__input{
+                    width: 300px;
+                    border-radius: 4px;
+                    border: 1px solid  #949494;
+                    background: #FFF;
+                    padding: 8px;
+                    color: #000;
+                    font-size: 18px;
+                    font-family: Raleway;
+                    color: #949494;
+                    margin-right: 10px; 
+                    margin-left: 10px;
+                }
             }
         }
         &__ul{

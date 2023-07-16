@@ -352,10 +352,35 @@
 .create__contacts__icons {
   margin-top: 10px;
   display: flex;
+  flex-direction: column;
 }
-.create__contacts__icons img {
-  margin-right: 5px;
+.create__contacts__icons__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.create__contacts__icons__item__btn {
+  border-radius: 5px;
+  background: linear-gradient(0deg, rgb(50, 24, 150), rgb(111, 65, 208) 20%, rgb(178, 124, 246) 90%);
+  color: #FFFFFF;
+  font-size: 18px;
+  font-family: Raleway;
+  border: none;
+  padding: 8px;
   cursor: pointer;
+}
+.create__contacts__icons__item__input {
+  width: 300px;
+  border-radius: 4px;
+  border: 1px solid #949494;
+  background: #FFF;
+  padding: 8px;
+  color: #000;
+  font-size: 18px;
+  font-family: Raleway;
+  color: #949494;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 .create__contacts__ul {
   list-style: none;

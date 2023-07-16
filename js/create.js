@@ -21,9 +21,9 @@ const addDevBtn = document.querySelector(".new-developer__window__add");
 const addDevImg = document.querySelector(".new-developer__window__main__item__btn");
 const linkWindow = document.querySelector(".link");
 const linkClose = document.querySelector(".link__window__close");
-const linkOpen = document.querySelectorAll(".create__contacts__icons__item");
+const linkOpen = document.querySelectorAll(".create__contacts__icons__item__btn");
 const linkAdd = document.querySelector(".link__window__add");
-const linkInput = document.querySelector(".link__window__input");
+const linkInput = document.querySelectorAll(".create__contacts__icons__item__input");
 const imgEx = '<li class="create__contacts__ul__li"><img id="media" src="" alt=""></li>';
 const mediaInput = document.querySelector(".create__contacts__button__input-wrapper__file");
 const tagsUl = document.querySelector(".tags__window__all");
@@ -32,6 +32,7 @@ const openTags = document.querySelector(".open-tags");
 const tagsWindow = document.querySelector(".tags");
 const tagsClose = document.querySelector(".tags__window__close");
 const titleGenerateBtn = document.querySelector(".create__main__text__name__generate");
+const taglineGenerateBtn = document.querySelector(".create__main__text__tagline__generate");
 let tagsPostList = new Array();
 let isLogo = false;
 let isDev = false;
@@ -196,6 +197,25 @@ async function generateTitle(description){
     
 }
 
+async function generateTagline(description){
+    return new Promise((resolve) => {
+        let xhr = new XMLHttpRequest();
+        let url = "https://swpprostartapi.pythonanywhere.com/generate-tagline";
+        xhr.open("POST", url, true);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.setRequestHeader('Accept', 'application/json');
+        xhr.onreadystatechange = function(){
+            if(xhr.status == 200 && xhr.readyState == 4){
+                let json = JSON.parse(xhr.responseText);
+                resolve(json.tagline);
+            }
+        }
+        let data = JSON.stringify({"description": description});
+        xhr.send(data);
+    })
+    
+}
+
 function writeCardsData() {
     return new Promise(resolve => {
         get(child(ref(getDatabase()), 'cards')).then((snapshot) => {
@@ -279,6 +299,16 @@ titleGenerateBtn.addEventListener("click", function(){
     }
 })
 
+taglineGenerateBtn.addEventListener("click", function(){
+    if(cardDescription.value != ""){
+        generateTagline(cardDescription.value.toString()).then((resolve) => {
+            cardTagline.value = resolve;
+        })
+    }else{
+        console.log("write decription");
+    }
+})
+
 newDevClose.addEventListener("click", function(){
     fadeOut(newDevWindow,1000);
 })
@@ -348,9 +378,7 @@ addDevBtn.addEventListener("click", function(){
 
 linkOpen.forEach((el, i) => {
     el.addEventListener("click", function(){
-        linkInput.value = contacts[i];
-        fadeIn(linkWindow, 1000);
-        choosenLink = i;
+        contacts[i] = linkInput[i].value;
     })
 })
 linkClose.addEventListener("click", function(){
@@ -358,7 +386,6 @@ linkClose.addEventListener("click", function(){
 })
 
 linkAdd.addEventListener("click", function(){
-    contacts[choosenLink] = linkInput.value;
     fadeOut(linkWindow,1000);
 })
 

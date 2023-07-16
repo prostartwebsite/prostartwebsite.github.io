@@ -78,6 +78,8 @@
         border-radius: 16px 0 0 16px;
         &__item{
             width: 100%;
+            min-height: 70%;
+            max-height: 90%;
         }
     }
     &__text{

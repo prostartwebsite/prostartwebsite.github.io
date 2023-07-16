@@ -80,6 +80,8 @@
 }
 .card__image__item {
   width: 100%;
+  min-height: 70%;
+  max-height: 90%;
 }
 .card__text {
   width: 40%;
